@@ -13,12 +13,12 @@ import Foundation
 func fizzBuzz(row:Int) -> String {
     let result = (row % 3, row % 5)
     switch result {
+    case (0, 0):
+        return "\(row) FizzBuzz"
     case (0, _):
         return "\(row) Fizz"
     case (_, 0):
         return "\(row) Buzz"
-    case (0, 0):
-        return "\(row) FizzBuzz"
     default:
         return "\(row)"
     }
