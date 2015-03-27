@@ -15,6 +15,7 @@
 		1D60E8251A3AAC3400ABF37E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D60E8241A3AAC3400ABF37E /* Images.xcassets */; };
 		1D60E8281A3AAC3400ABF37E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D60E8261A3AAC3400ABF37E /* LaunchScreen.xib */; };
 		1D60E8341A3AAC3500ABF37E /* SwiftyFixxBuzzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D60E8331A3AAC3500ABF37E /* SwiftyFixxBuzzTests.swift */; };
+		1DB4696E1AC5EC78007B8D23 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB4696D1AC5EC78007B8D23 /* TestData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		1D60E82D1A3AAC3500ABF37E /* SwiftyFixxBuzzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyFixxBuzzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D60E8321A3AAC3500ABF37E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D60E8331A3AAC3500ABF37E /* SwiftyFixxBuzzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyFixxBuzzTests.swift; sourceTree = "<group>"; };
+		1DB4696D1AC5EC78007B8D23 /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				1D60E8331A3AAC3500ABF37E /* SwiftyFixxBuzzTests.swift */,
+				1DB4696D1AC5EC78007B8D23 /* TestData.swift */,
 				1D60E8311A3AAC3500ABF37E /* Supporting Files */,
 			);
 			path = SwiftyFixxBuzzTests;
@@ -229,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB4696E1AC5EC78007B8D23 /* TestData.swift in Sources */,
 				1D60E8341A3AAC3500ABF37E /* SwiftyFixxBuzzTests.swift in Sources */,
 				1D2143771A3B61A20031F3B8 /* FizzBuzz.swift in Sources */,
 			);

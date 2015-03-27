@@ -22,7 +22,9 @@ class SwiftyFixxBuzzTests: XCTestCase {
     }
 
     func testResult() {
-        XCTAssertEqual(fizzBuzz(0), "0 Fizz", "answer should be '0 Fizz'")
+        for (index, answer) in enumerate(testData) {
+            XCTAssertEqual(fizzBuzz(index), answer, "answer should be '\(answer)'")
+        }
     }
 
     func testPerformanceExample() {
