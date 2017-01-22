@@ -8,26 +8,26 @@
 
 import UIKit
 
-class TableViewController: UITableViewController, UITableViewDataSource, UITableViewDelegate {
+class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.tableView.contentInset.top = 20.0
-        self.tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "fizzBuzzCell")
+        self.tableView.register(UITableViewCell.classForCoder(), forCellReuseIdentifier: "fizzBuzzCell")
     }
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10000
     }
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("fizzBuzzCell", forIndexPath: indexPath) as UITableViewCell
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "fizzBuzzCell", for: indexPath) as UITableViewCell
 
         cell.textLabel?.text = fizzBuzz(indexPath.row)
         return cell;

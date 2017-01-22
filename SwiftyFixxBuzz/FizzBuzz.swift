@@ -10,7 +10,7 @@ import Foundation
 
 // Putting this here makes testing easier...
 
-func fizzBuzz(row:Int) -> String {
+func fizzBuzz(_ row:Int) -> String {
     let result = (row % 3, row % 5)
     switch result {
     case (0, 0):

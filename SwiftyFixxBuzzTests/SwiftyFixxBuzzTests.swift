@@ -22,16 +22,16 @@ class SwiftyFixxBuzzTests: XCTestCase {
     }
 
     func testResult() {
-        for (index, answer) in enumerate(testData) {
+        for (index, answer) in testData.enumerated() {
             XCTAssertEqual(fizzBuzz(index), answer, "answer should be '\(answer)'")
         }
     }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.
-        self.measureBlock() {
+        self.measure() {
             for i in 1...1000 {
-                fizzBuzz(i)
+                _ = fizzBuzz(i)
             }
         }
     }
