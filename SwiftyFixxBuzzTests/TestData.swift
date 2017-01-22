@@ -9,7 +9,8 @@
 import Foundation
 
 
-let testData = ["0 FizzBuzz",
+let testData = [
+    "0 FizzBuzz",
     "1",
     "2",
     "3 Fizz",
@@ -29,4 +30,5 @@ let testData = ["0 FizzBuzz",
     "17",
     "18 Fizz",
     "19",
-    "20 Buzz"]
+    "20 Buzz"
+]
